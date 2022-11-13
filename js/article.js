@@ -11,6 +11,10 @@ const cover_image = document.getElementById('createImage__post');
 const title = document.getElementById('createInput__text');
 const tags = document.getElementById('createInput__text-tags');
 const parrafo = document.getElementById('createInput__text-p');
+const date = new Date();
+const day = date.getDate();
+const month = date.getMonth();
+const year = date.getFullYear();
 
 
 const articles = {
@@ -18,6 +22,7 @@ const articles = {
     title: title.value,
     tags: tags.value,
     parrafo: parrafo.value,    
+    fecha: date
 };
 
 
