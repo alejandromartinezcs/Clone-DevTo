@@ -12,6 +12,7 @@ const articles = {
 };
 
 
+
 fetch(urlColeccion, {
     method: 'POST',
     body: JSON.stringify(articles),
