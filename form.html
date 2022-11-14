@@ -18,7 +18,7 @@
                 <input id="createImage__post" type="file" class="btn btn-outline-primary" type="button" value="Add a cover image">
             </div>
             <div class="article_main__createPost-title">
-                <input id="createInput__text" type="text" placeholder="New post title here...">
+                <input id="createInput__text" type="text" name = "createInput__text" placeholder="New post title here...">
             </div>
             <div class="article_main__createPost-tags c-autocomplete--multi__wrapper border-none p-0 flex items-center  cursor-text">
                 <ul>
@@ -28,12 +28,12 @@
                 </ul>
             </div>
             <div class="article_main__createPost-parrafo form-floating">
-                <textarea class="form-control" style="height: 600px"placeholder="Write your post here..." id="createInput__text-p"></textarea>
+                <textarea class="form-control" style="height: 600px"placeholder="Write your post here..." id="createInput__text-p" name = "createInput__text-p"></textarea>
                 <label for="createInput__text-p">Write your post here...</label>
               </div>
-            <input id="article_main__createPost-submit" type="submit" value="Enviar"> 
-            <input id="article_main__createPost-submit-save" type="submit" value="Save to Draft"> 
-            <input id="article_main__createPost-submit-revert" type="submit" value="Revert new changes"> 
+            <input id="article_main__createPost-submit"         type="submit" value="Publicar"> 
+            <input id="article_main__createPost-submit-save"    type="submit" value="Save to Draft"> 
+            <input id="article_main__createPost-submit-revert"  type="submit" value="Revert new changes"> 
         </form>
     </main>
     <script src="./js/article.js" type="module"></script>
