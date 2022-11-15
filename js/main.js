@@ -4,12 +4,12 @@ const urlColeccion = environment.urlDb + '/articles.json';
 
 
 
-const articles = {
-    cover_image: 'https://www.school-for-champions.com/science/images/static_generating_wimshurst.jpg',
-    title: 'Prueba Kodemia',
-    tags: 'kodemia, alfred, vic, grace, alejandro',
-    parrafo: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptates illo asperiores! Reiciendis totam ut neque commodi fugit labore itaque, rem doloremque, ipsa expedita dolor voluptas quod nam ad unde.',    
-};
+// const articles = {
+//     cover_image: 'https://www.school-for-champions.com/science/images/static_generating_wimshurst.jpg',
+//     title: 'Prueba Kodemia',
+//     tags: 'kodemia, alfred, vic, grace, alejandro',
+//     parrafo: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptates illo asperiores! Reiciendis totam ut neque commodi fugit labore itaque, rem doloremque, ipsa expedita dolor voluptas quod nam ad unde.',    
+// };
 
 
 
