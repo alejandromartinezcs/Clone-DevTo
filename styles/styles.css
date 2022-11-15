@@ -1,1 +1,144 @@
-/*# sourceMappingURL=styles.css.map */
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.text-purple {
+  color: #3b49df;
+}
+
+.text-gray {
+  color: #575757;
+}
+
+.text-link-primary {
+  color: #404040;
+}
+
+.text-link-secondary {
+  color: #717171;
+}
+
+.link-purple {
+  color: #3b49df;
+  text-decoration: none;
+}
+.link-purple:hover {
+  color: #3b49df;
+}
+
+.btn-outline-purple {
+  color: #3b49df;
+  outline: 1px solid #3b49df;
+}
+
+.btn-outline-purple:hover {
+  color: white;
+  background-color: #3b49df;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f5f5 !important;
+}
+
+.navbar .img__devto-logo {
+  height: 38px;
+  width: 50px;
+}
+.navbar .img__devto-logo img {
+  max-width: 100%;
+}
+.navbar .bell__notification-icon {
+  height: 30px;
+  width: 30px;
+}
+
+.avatar__button {
+  border: 0;
+  background-color: transparent;
+}
+.avatar__button .avatar__icon-image {
+  height: 2rem;
+  width: 2rem;
+}
+
+.form__navbar .btn-search {
+  background-color: white;
+  border: 1px solid #ced4da;
+  border-left: 0;
+}
+.form__navbar .btn-search:hover {
+  background-color: rgba(59, 73, 223, 0.2);
+}
+
+.nav-profile-image {
+  height: 40px;
+  width: 50px;
+}
+
+.container .card__main .card__img {
+  height: 3rem;
+  width: 3rem;
+}
+.container .card-body .card__tags a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 3px 6px;
+  border-radius: 2px;
+}
+
+.btn-purple {
+  background-color: #3b49df;
+  color: white;
+}
+.btn-purple:hover {
+  background-color: #3b49df;
+  color: white;
+  text-decoration: underline;
+}
+
+.card-profile {
+  border-top: 32px solid black;
+}
+.card-profile .card-body {
+  margin-top: -32px;
+}
+.card-profile .card-text {
+  color: #575757;
+}
+.card-profile .card-title img {
+  width: 48px;
+}
+
+.article-content hr {
+  width: 25%;
+  opacity: 0.1;
+  margin: 40px auto;
+}
+
+.card-footer-container {
+  background-color: #e5e5e5;
+}
+
+.card__footer {
+  width: 100vw;
+}
+
+article {
+  cursor: pointer;
+}
+
+.nav__list-top {
+  font-weight: light;
+}
+
+.nav-link:hover {
+  color: #3b49df !important;
+}
+
+.bell__notification-icon:hover {
+  fill: #3b49df;
+}
+
+.dropdown__user-options .dropdown-item {
+  padding: 8px 16px;
+}/*# sourceMappingURL=styles.css.map */
