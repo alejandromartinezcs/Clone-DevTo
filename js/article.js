@@ -1,4 +1,6 @@
+
 import environment from "./enviroment.js";
+
 const urlColeccion = environment.urlDb + '/articles.json';
 
 const cover_image   = document.getElementById('createImage__post');
@@ -9,6 +11,8 @@ const parrafo       = document.getElementById('createInput__text-p');
 const formArticle   = document.getElementById('article-form');
 const enviar        = document.getElementById('article_main__createPost-submit');
 
+const prevImagen    =   document.getElementById('imagePrev');
+
 
 const date          = new Date();
 const day           = date.getDate();
@@ -16,9 +20,24 @@ const month         = date.getMonth();
 const year          = date.getFullYear();
 
 /*=======================================
-CRUD POST
+CARGAR IMAGEN
 =======================================*/
-/* Crear Post */
+cover_image.addEventListener("change",() => {
+    console.log("prepara imagen");
+    const archivoImg = cover_image.files;
+    if(!archivoImg || !archivoImg.length){
+        prevImagen.src = "";
+        return;
+    }
+    const archUno = archivoImg[0];
+    const objectURL = URL.createObjectURL(archUno);
+    prevImagen.src = objectURL;
+})
+
+/*=======================================
+CRUD POST (Crear Post - method: 'POST')
+=======================================*/
+
 formArticle.addEventListener('submit',(e) =>{
     e.preventDefault();
     /*Leer titulo,fecha,contenido*/
@@ -46,4 +65,6 @@ formArticle.addEventListener('submit',(e) =>{
         })
         .catch(error => console.log(error));
 })
+
+
 
