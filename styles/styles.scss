@@ -1,0 +1,185 @@
+@import "_variables";
+
+// Utilities
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.text-purple {
+  color: $purple-primary;
+}
+
+.text-gray {
+  color: $gray-base-100;
+}
+
+.text-link-primary {
+  color: $gray-link-primary;
+}
+
+.text-link-secondary {
+  color: $gray-link-secondary;
+}
+
+.link-purple {
+  color: $purple-primary;
+  text-decoration: none;
+  &:hover {
+    color: $purple-primary;
+  }
+}
+.btn-outline-purple {
+  color: $purple-primary;
+  outline: 1px solid $purple-primary;
+}
+.btn-outline-purple:hover {
+  color: white;
+  background-color: $purple-primary;
+}
+
+//starts styles body
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f5f5 !important;
+}
+.navbar {
+  .img__devto-logo {
+    height: 38px;
+    width: 50px;
+    img {
+      max-width: 100%;
+    }
+  }
+  .bell__notification-icon {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+.avatar__button {
+  border: 0;
+  background-color: transparent;
+  .avatar__icon-image {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+.form__navbar {
+  // .input__loupe-control {
+  //   background: url(../assets/loupe.svg) no-repeat;
+  //   position: absolute;
+  // }
+  .btn-search {
+    background-color: white;
+    border: 1px solid #ced4da;
+    border-left: 0;
+  }
+  .btn-search:hover {
+    background-color: rgba($purple-primary, 0.2);
+  }
+}
+
+.nav-profile-image{
+    height: 40px;  
+    width: 50px;
+}
+
+//ASIDES AND MAIN
+
+.container {
+  .card__main {
+    .card__img {
+      height: 3rem;
+      width: 3rem;
+    }
+  }
+  .card-body {
+    .card__tags {
+      a:hover {
+        background-color: rgba(#000000, 0.05);
+        padding: 3px 6px;
+        border-radius: 2px;
+      }
+    }
+  }
+}
+
+// Buttons
+.btn-purple {
+  background-color: $purple-primary;
+  color: white;
+  &:hover {
+    background-color: $purple-primary;
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+// Profile Card
+.card-profile {
+  border-top: 32px solid black;
+  .card-body {
+    margin-top: -32px;
+  }
+  .card-text {
+    color: $gray-base-100;
+  }
+  .card-title {
+    img {
+      width: 48px;
+    }
+  }
+}
+
+.article-content {
+  hr {
+    width: 25%;
+    opacity: 0.1;
+    margin: 40px auto;
+  }
+}
+
+//comments container
+
+//footer styles
+
+.card-footer-container {
+  background-color: #e5e5e5;
+}
+.card__footer {
+  width: 100vw;
+}
+
+// Articles styles
+
+article {
+  cursor: pointer;
+}
+
+// Main styles
+
+.nav__list-top {
+  font-weight: light;
+}
+
+@mixin hover_elements($hover_color) {
+  color: $hover_color !important;
+}
+
+.nav-link:hover {
+  @include hover_elements($purple-primary);
+}
+
+.bell__notification-icon:hover {
+  // @include hover_elements($purple-primary);
+  fill: $purple-primary;
+}
+
+
+.dropdown__user-options {
+  .dropdown-item {
+    padding: 8px 16px;
+  }
+}
