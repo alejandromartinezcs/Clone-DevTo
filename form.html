@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css"/>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
@@ -11,32 +12,120 @@
     <title>DevTo Draft</title>
 </head>
 <body>
+    <nav
+    class="navbar sticky-top container-fluid row-md"
+    style="background-color: #ffffff"
+    ;
+    >
+    <div class="container-md d-flex justify-content-between">
+       <!-- Logo y search bar se colocan a la izquierda -->
+       <div class="d-flex">
+          <div class="me-3">
+             <div class="div div__container-img d-flex align-items-center">
+                <div class="div div__menu-burguer mx-3 d-block d-md-none">
+                   <a class="" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="a3uzztorovwykeessr6lbtvkxzautcfm" class="crayons-icon">
+                         <title id="a3uzztorovwykeessr6lbtvkxzautcfm">Navigation menu</title>
+                         <path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"></path>
+                      </svg>
+                   </a>
+                </div>
+                <a class="navbar-brand" href="./index.html">
+                <img
+                   class="div__nav-menu img__devto-logo"
+                   src="./assets/resized_logo_UQww2soKuUsjaOGNB38o.png"
+                   alt=""
+                   />
+                </a>
+             </div>
+          </div>
+          <div class="container text-start col align-items-start">
+             <form class="form__navbar" action="">
+                <div class="input-group">
+                   <input
+                      type="text"
+                      class="d-none d-sm-none d-md-none d-lg-block form-control input__loupe-control"
+                      placeholder="Search..."
+                      />
+                   <button class="d-none d-sm-none d-md-none d-lg-block btn btn-search" type="button">
+                   <img width="20" src="/assets/loupe.svg" alt="" />
+                   </button>
+                </div>
+             </form>
+          </div>
+       </div>
+       <!-- create-post button, bell and avatar are placed to the right -->
+       <div class="d-flex align-items-center gap-3 dropdown">
+          <a class="d-none d-sm-none d-md-none d-lg-block btn btn-purple btn-outline-purple fw-bold" href="form.html" class="btn btn-info" role="button">Create Post</a>
+          <button class="d-md-block d-lg-none btn btn-search" type="button">
+          <img width="20" src="/assets/loupe.svg" alt="" />
+          </button>
+          <svg class= "bell__notification-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img" aria-labelledby="agdk31akwd0wvega671bi3rc07bwke7d" class="crayons-icon">
+             <title id="agdk31akwd0wvega671bi3rc07bwke7d">Notifications</title>
+             <path d="M20 17h2v2H2v-2h2v-7a8 8 0 1116 0v7zm-2 0v-7a6 6 0 10-12 0v7h12zm-9 4h6v2H9v-2z"></path>
+          </svg>
+          <button
+             type="button" data-bs-toggle="dropdown" aria-expanded="false"
+             class="avatar avatar__button p-1"
+             id="member-menu-button"
+             >
+          <img
+             class="avatar__icon-image rounded-circle img-thumbnail card-img-top"
+             alt=""
+             id="nav-profile-image"
+             src="https://ca.slack-edge.com/TCRFJBKB6-U03NN3JRQ23-768c56e5b62d-512"
+             />
+          </button>
+          <ul class="dropdown-menu dropdown__user-options dropdown-menu-light pt-2">
+             <li><a class="dropdown-item d-flex flex-column" href="#">
+                <span class="span span__dropdown">Hacer Común</span>
+                <small>@HacerKomún</small></a>
+             </li>
+             <li>
+                <hr class="dropdown-divider">
+             </li>
+             <li><a class="dropdown-item" href="#">Dashboard</a></li>
+             <li><a class="dropdown-item" href="form.html">Create Post</a></li>
+             <li><a class="dropdown-item" href="#">Reading List</a></li>
+             <li><a class="dropdown-item" href="#">Settings</a></li>
+             <li>
+                <hr class="dropdown-divider">
+             </li>
+             <li><a class="dropdown-item" href="#">Sign Out</a></li>
+          </ul>
+       </div>
+    </div>
+ </nav>
+    
     <main id="article_main" class="container">
-        <form id="article-form">
+        <form id="article-form pd" class="mt-5">
             <div class="article_main__createPost-button">
                 <!-- <button id="createImage__post" type="button" class="btn btn-outline-primary">Add a cover image </button> -->
-                <input id="createImage__post" type="file" class="btn btn-outline-primary" type="button" value="Add a cover image">
+                <input id="createInput__img" type="text" class="form-control" name = "createInput__text" placeholder="Inserta la url de la imagen">
+                <img id="imagePrev">
+                
             </div>
+            <br>
             <div class="article_main__createPost-title">
-                <input id="createInput__text" type="text" name = "createInput__text" placeholder="New post title here...">
+                <input id="createInput__text" type="text" class="form-control" name = "createInput__text" placeholder="New post title here...">
             </div>
-            <div class="article_main__createPost-tags c-autocomplete--multi__wrapper border-none p-0 flex items-center  cursor-text">
-                <ul>
-                    <li>
-                        
-                    </li>
-                </ul>
-            </div>
+
             <div class="article_main__createPost-parrafo form-floating">
-                <textarea class="form-control" style="height: 600px"placeholder="Write your post here..." id="createInput__text-p" name = "createInput__text-p"></textarea>
+                <textarea class="form-control" style="height: 400px" placeholder="Write your post here..." id="createInput__text-p" name = "createInput__text-p"></textarea>
                 <label for="createInput__text-p">Write your post here...</label>
               </div>
-            <input id="article_main__createPost-submit"         type="submit" value="Publicar"> 
-            <input id="article_main__createPost-submit-save"    type="submit" value="Save to Draft"> 
-            <input id="article_main__createPost-submit-revert"  type="submit" value="Revert new changes"> 
+            <input id="article_main__createPost-submit" class="btn btn-primary"         type="submit" value="Publicar"> 
+            <input id="article_main__createPost-delete" class="btn btn-danger" value="Borrar"> 
+            <input id="article_main__createPost-edit" class="btn btn-dark"   value="Editar"> 
+
+
         </form>
     </main>
     <script src="./js/article.js" type="module"></script>
+    <script src="./js/forms.js" type="module"></script>
+    <!--<script src="./js/cargaimagen.js"></script>*/-->
+    <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>>
 </body>
 </html>
 
