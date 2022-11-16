@@ -4,9 +4,6 @@ import environment from "./enviroment.js";
 const urlColeccion = environment.urlDb + '/articles.json';
 
 const cover_image   = document.getElementById('createImage__post');
-const title         = document.getElementById('createInput__text');
-const tags          = document.getElementById('createInput__text-tags');
-const parrafo       = document.getElementById('createInput__text-p');
 /*-----Traer boton Enviar ---*/
 const formArticle   = document.getElementById('article-form');
 const enviar        = document.getElementById('article_main__createPost-submit');

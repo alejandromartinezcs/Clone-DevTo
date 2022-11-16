@@ -1,13 +1,7 @@
-import environment from "./enviroment.js";
+import environment from "./environment.js";
 const urlColeccion = environment.urlDb + '/articles.json';
 
-const divarticle   =   document.getElementById('container-article');
-const cover_image   = document.getElementById('createImage__post');
-const title         = document.getElementById('createInput__text');
-const tags          = document.getElementById('createInput__text-tags');
-const parrafo       = document.getElementById('createInput__text-p');
-const formArticle   = document.getElementById('article-form');
-const enviar        = document.getElementById('article_main__createPost-submit');
+const divarticle    = document.getElementById('container-article');
 
 
 
@@ -44,39 +38,14 @@ function LeerPost(){
             divarticle.appendChild(articledate);
             divarticle.appendChild(articledesc);
             divarticle.appendChild(editar);
-            console.log(titulo)
-            console.log(parrafo)
-            console.log(fecha)
-
-            editar.addEventListener('click',(element) =>{
-                console.log("Voy editar el post");
-                // const anchorActualiza = document.createElement("a");
-                // anchorActualiza.a 
-                const titlePost     = formArticle['createInput__text'].value;
-                const contenidoPost = formArticle['createInput__text-p'].value;
-                const fechaPost     = date;
-                
-                const datosActualizar = {
-                    title: titulo,
-                    pararafo: parrafo,
-                    fecha: fecha,
-                    cover_image: image,
-                }
-
-                fetch(urlColeccion,{
-                    method: 'PUT',
-                    body: JSON.stringify(datosPost),
-                    headers: {
-                    'Content-Type': 'application/json'
-                    }})
-                    .then(resp => resp.json())
-                    .then(data => {console.log(data);})
-                .catch(error => console.log(error));
-            })
+            console.log(titulo);
+            console.log(parrafo);
+            console.log(fecha);
         });   
     })
     .catch(error => console.log(error))
 }
+
 LeerPost();
 
 /*=========================================
